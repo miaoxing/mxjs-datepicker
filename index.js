@@ -29,15 +29,17 @@ const StyledDatePicker = styled.div`
   }
 `;
 
-const CustomInput = (props) => {
-  return <input
-    type="text"
-    onMouseDown={(e) => {
-      e.preventDefault();
-    }}
-    {...props}
-  />;
-};
+class CustomInput extends React.Component {
+  render() {
+    return <input
+      type="text"
+      onMouseDown={(e) => {
+        e.preventDefault();
+      }}
+      {...this.props}
+    />;
+  }
+}
 
 class MyDatePicker extends React.Component {
   render() {
