@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import styled from '@emotion/styled';
@@ -29,7 +29,7 @@ const StyledDatePicker = styled.div`
   }
 `;
 
-class CustomInput extends React.Component {
+class CustomInput extends Component {
   render() {
     return <input
       type="text"
@@ -41,7 +41,7 @@ class CustomInput extends React.Component {
   }
 }
 
-class MyDatePicker extends React.Component {
+class MyDatePicker extends Component {
   render() {
     return <StyledDatePicker>
       <DatePicker
